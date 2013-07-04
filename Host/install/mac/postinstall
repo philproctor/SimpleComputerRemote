@@ -1,0 +1,4 @@
+#!/bin/bash
+chown root:admin /Library/LaunchDaemons/com.rekaplogic.remote.plist
+chown root:admin /usr/bin/Rekap\ Remote\ Server
+

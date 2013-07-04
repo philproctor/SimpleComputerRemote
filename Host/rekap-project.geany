@@ -1,0 +1,42 @@
+[file_prefs]
+final_new_line=true
+ensure_convert_new_lines=true
+strip_trailing_spaces=true
+replace_tabs=false
+
+[indentation]
+indent_width=4
+indent_type=1
+indent_hard_tab_width=8
+detect_indent=false
+detect_indent_width=false
+indent_mode=2
+
+[project]
+name=Rekap Remote
+base_path=
+description=
+file_patterns=*.go;
+
+[long line marker]
+long_line_behaviour=1
+long_line_column=130
+
+[files]
+current_page=0
+FILE_NAME_0=52;Go;0;16;1;1;0;%2Fhome%2Fphil%2FDevelopment%2Frekap-remote-server%2Fsrc%2FRekap%20Remote%20Server.go;0;4
+
+[build-menu]
+EX_00_LB=_Execute
+EX_00_CM=make run
+EX_00_WD=
+GoFT_00_LB=_Compile
+GoFT_00_CM=make
+GoFT_00_WD=
+filetypes=Go;Make;
+MakeFT_00_LB=_Compile
+MakeFT_00_CM=make
+MakeFT_00_WD=
+
+[VTE]
+last_dir=/home/phil

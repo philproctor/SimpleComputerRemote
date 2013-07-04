@@ -1,0 +1,4 @@
+*.exe
+*.a
+*.out
+geany_run_script.*

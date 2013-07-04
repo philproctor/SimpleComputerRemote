@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+                android:title="General Settings">
+                <CheckBoxPreference
+                        android:title="Auto-Connect"
+                        android:defaultValue="true"
+                        android:summary="Auto connect to server"
+                        android:key="autoconnect" />
+                <ListPreference
+                        android:title="Select Server"
+                        android:summary="Choose default server to connect to"
+                        android:key="server"
+                        android:defaultValue="First"
+                        android:entries="@array/server_pref"
+                        android:entryValues="@array/server_pref" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Input">
+            <com.rekap.remote.SeekBarPreference android:key="sensitivity"
+        		android:title="Mouse sensitivity"
+        		android:summary="Modify the mouse sensitive"
+        		android:dialogMessage="Mouse sensitivity"
+        		android:defaultValue="30"
+        		android:text=""
+        		android:max="100" />
+        </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Simple Remote</string>
+    <string name="menu_settings">Settings</string>
+    <string name="blank"></string>
+    <string name="menu_keyboard">Keyboard</string>
+    <string name="prefs">Preferences</string>
+    <string-array name="server_pref">
+        <item >First</item>
+    </string-array>
+        <string name="reconnect">Reconnect</string>
+        <string name="TouchBackground">One finger tap: Left-click\nTwo finger tap: Right-click\nTwo finger drag: Scroll\nLong press: Drag</string>
+        <string name="firstruntext">Thanks for installing the Simple Computer Remote!\n\nIn order to operate this remote, you need to have the host application installed on the computer you wish to operate.\nGo to http://rekaplogic.com on your computer and download the appropriate host software for your operating system to get your computer set up for use.\n\nFor upgrading users, please update the server software to ensure you have all of the latest features.\n\nNew features requiring server upgrade:\nTwo finger scrolling.\n\nNew features for this release:\nLong press to drag\nTwo finger scrolling\nTwo finger tap for right click</string>
+        <string name="menu_description">Main Menu</string>
+
+</resources>
