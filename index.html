@@ -34,67 +34,49 @@
         <h3>
 <a name="general-information" class="anchor" href="#general-information"><span class="octicon octicon-link"></span></a>General Information</h3>
 
-<p>The Simple Computer Remote allows you to control your Windows, Mac OS X, or Linux desktop computer with an Android device as a remote. The remote works with the built in keyboard
-in Android so that you can use the same keyboard that you are familiar with. The installed server requires no special configuration to operate. Without any extra configuration, the
-Android remote will simply communicate with the first server that it finds on your wifi network.</p>
-
-<p>If you would like to report a bug or request a feature of this product, please send an email to the <a href="mailto:development@rekaplogic.com">development team</a>. All requests are taken seriously and will be responded to
-accordingly.</p>
+<p>The Simple Computer Remote allows you to control your Windows, Mac OS X, or Linux desktop computer with an Android device as a remote. The remote works with the built in keyboard in Android so that you can use the same keyboard that you are familiar with. The installed server requires no special configuration to operate. Without any extra configuration, the Android remote will simply communicate with the first server that it finds on your wifi network.<br><br>
+If you would like to report a bug or request a feature of this product, please send an email to the <a href="mailto:development@rekaplogic.com">development team</a>. All requests are taken seriously and will be responded to accordingly.<br><br></p>
 
 <h3>
 <a name="android-usage" class="anchor" href="#android-usage"><span class="octicon octicon-link"></span></a>Android Usage</h3>
 
-<p>Android usage is designed to "just work" and be as simple as possible.
-Note that the menu button may refer to either the hardware menu button or the soft menu button in between the mouse buttons.</p>
-
-<p>To get started using the Android application, please follow these steps:<br>
-1. Download and install the Android application in Google Play or from the <a href="download.html">downloads</a> link above.
-2. Ensure that the "host" server application is installed for your host's operating system (instructions below).
-3. Open the application and begin using the mouse and keyboard control. The keyboard can be accessed via the menu button.</p>
-
-<p>If you have more than one host on your wifi network, you will also have to select which host you wish to connect to. In order to
-do this, press the menu button, select settings, then select "Select Server". This will display a list of all servers that your
-device has detected on the local network. Select the device you wish to control and press ok. From the main screen, press your menu
-button and select "reconnect".</p>
-
-<p>If your mouse movement is too jumpy or too slow, press the menu button, select settings, then select "Mouse sensitivity". Drag the
-sensitivity bar to adjust and press OK.</p>
+<p>Android usage is designed to "just work" and be as simple as possible. Note that the menu button may refer to either the hardware menu button or the soft menu button in between the mouse buttons.<br><br>
+To get started using the Android application, please follow these steps:<br>
+1. Download and install the Android application in Google Play or from the <a href="download.html">downloads</a> link above.<br>
+2. Ensure that the "host" server application is installed for your host's operating system (instructions below).<br>
+3. Open the application and begin using the mouse and keyboard control. The keyboard can be accessed via the menu button.<br><br>
+If you have more than one host on your wifi network, you will also have to select which host you wish to connect to. In order to do this, press the menu button, select settings, then select "Select Server". This will display a list of all servers that your device has detected on the local network. Select the device you wish to control and press ok. From the main screen, press your menu button and select "reconnect".<br><br>
+If your mouse movement is too jumpy or too slow, press the menu button, select settings, then select "Mouse sensitivity". Drag the sensitivity bar to adjust and press OK.<br><br></p>
 
 <h3>
 <a name="windows-host" class="anchor" href="#windows-host"><span class="octicon octicon-link"></span></a>Windows Host</h3>
 
-<p>To set up the remote to connect to a windows machine, please follow these steps:
-1. Download the host application from the <a href="download.html">downloads</a> link above.
-2. Run the downloaded file and follow the steps to complete installation.</p>
-
-<p>If you selected the option to run the application, it is now running silently in the background. You can confirm the application is running
-in the task manager, from the server list on your android device application, or by visiting http://localhost:11393 in your browser. Note
-that the application cannot be run as a service. This is because service applications are not allowed to interact with your computer's mouse
-and keyboard even if you select the interactive session options (exception, some Windows XP installations).</p>
+<p>To set up the remote to connect to a windows machine, please follow these steps:<br>
+1. Download the host application from the <a href="download.html">downloads</a> link above.<br>
+2. Run the downloaded file and follow the steps to complete installation.<br><br>
+If you selected the option to run the application, it is now running silently in the background. You can confirm the application is running in the task manager, from the server list on your android device application, or by visiting http://localhost:11393 in your browser. Note that the application cannot be run as a service. This is because service applications are not allowed to interact with your computer's mouse and keyboard even if you select the interactive session options (exception, some Windows XP installations).<br><br></p>
 
 <h3>
 <a name="linux-host" class="anchor" href="#linux-host"><span class="octicon octicon-link"></span></a>Linux Host</h3>
 
-<p>To set up the remote to connect to a linux machine, please follow these steps:
-1. Download and install the host application from the <a href="download.html">downloads</a> link above.
-2. The installation will add a file named "SimpleComputerRemote" into /opt/rekap
-3. Add /opt/rekap/SimpleComputerRemote as a startup application for your window manager.</p>
-
-<p>Note that the application must start during login for your window manager so that the application can attach to the correct instance of X11.</p>
+<p>To set up the remote to connect to a linux machine, please follow these steps:<br>
+1. Download and install the host application from the <a href="download.html">downloads</a> link above.<br>
+2. The installation will add a file named "SimpleComputerRemote" into /opt/rekap<br>
+3. Add /opt/rekap/SimpleComputerRemote as a startup application for your window manager.<br><br>
+Note that the application must start during login for your window manager so that the application can attach to the correct instance of X11.<br><br></p>
 
 <h3>
 <a name="mac-host" class="anchor" href="#mac-host"><span class="octicon octicon-link"></span></a>Mac Host</h3>
 
-<p>To set up the remote to connect to an Apple machine, please follow these steps:
-1. Download the host application from the <a href="download.html">downloads</a> link above.
-2. Double click the downloaded package to run it.
-3. Follow the on-screen instructions.</p>
-
-<p>Note that Mac OS X does not provide an automatic uninstaller. To uninstall on mac, follow these steps:
-1. Obtain administrator priveleges.
-2. Delete /Library/LaunchDaemons/com.rekaplogic.remote.plist
-3. Delete /usr/bin/server-darwin-amd64.out
-4. Reboot.</p>
+<p>To set up the remote to connect to an Apple machine, please follow these steps:<br>
+1. Download the host application from the <a href="download.html">downloads</a> link above.<br>
+2. Double click the downloaded package to run it.<br>
+3. Follow the on-screen instructions.<br><br>
+Note that Mac OS X does not provide an automatic uninstaller. To uninstall on mac, follow these steps:<br>
+1. Obtain administrator priveleges.<br>
+2. Delete /Library/LaunchDaemons/com.rekaplogic.remote.plist<br>
+3. Delete /usr/bin/server-darwin-amd64.out<br>
+4. Reboot.<br></p>
       </section>
     </div>
 
