@@ -2,7 +2,7 @@
 
 package osimpl
 
-//#cgo LDFLAGS: -lX11 -lXtst
+//#cgo LDFLAGS: -lX11 -lXtst -lXext
 //#include "input_linux.c"
 import "C"
 
