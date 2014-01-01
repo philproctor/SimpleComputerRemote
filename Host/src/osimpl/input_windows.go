@@ -73,3 +73,11 @@ func ScrollUp() {
 	val := SCROLLUP_INCREMENT
 	syscall.Syscall6(uintptr(mouseEvent), 0, WHEEL, 0, 0, uintptr(val), 0, 0)
 }
+
+func VolumeDown() {
+
+}
+
+func VolumeUp() {
+
+}

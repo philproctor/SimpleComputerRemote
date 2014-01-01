@@ -61,3 +61,11 @@ func ScrollDown() {
 func ScrollUp() {
 	C.ScrollUp()
 }
+
+func VolumeDown() {
+
+}
+
+func VolumeUp() {
+
+}

@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.inputmethod.InputMethodManager;
@@ -58,6 +59,26 @@ public class MainActivity extends Activity {
             builder.show();
         }
     };
+
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        int action = event.getAction();
+        int keyCode = event.getKeyCode();
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_VOLUME_UP:
+                if (action == KeyEvent.ACTION_DOWN) {
+                    NetInput.VolumeUp();
+                }
+                return true;
+            case KeyEvent.KEYCODE_VOLUME_DOWN:
+                if (action == KeyEvent.ACTION_DOWN) {
+                    NetInput.VolumeDown();
+                }
+                return true;
+            default:
+                return super.dispatchKeyEvent(event);
+        }
+    }
 
     private Context context;
     private KeypadHandler keypadHandler = new KeypadHandler();
