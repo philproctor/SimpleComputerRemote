@@ -7,6 +7,7 @@ import (
 const (
 	mouse    = 10
 	keyboard = 20
+	mixer	 = 30
 )
 
 func Run() {
@@ -29,6 +30,9 @@ func (ts *remoteServer) MessageReceived(message scratch.ScratchMessage) {
 
 	case keyboard:
 		processKeyboard(&message)
+
+	case mixer:
+		processMixer(&message)
 	}
 }
 

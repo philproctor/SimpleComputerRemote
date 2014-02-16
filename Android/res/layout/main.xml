@@ -17,7 +17,7 @@
         android:contentDescription="@string/menu_description"
         android:scaleType="fitXY"
         android:src="@android:drawable/ic_menu_more" />
-    
+
     <Button
         android:id="@+id/leftClick"
         android:layout_width="wrap_content"

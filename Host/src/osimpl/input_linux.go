@@ -2,7 +2,7 @@
 
 package osimpl
 
-//#cgo LDFLAGS: -lX11 -lXtst
+//#cgo LDFLAGS: -lX11 -lXtst -lXext
 //#include "input_linux.c"
 import "C"
 
@@ -66,4 +66,12 @@ func ScrollDown() {
 func ScrollUp() {
 	C.SendClick(4, 1)
 	C.SendClick(4, 0)
+}
+
+func VolumeDown() {
+	C.SendKeysym(C.int(0x1008ff11))
+}
+
+func VolumeUp() {
+	C.SendKeysym(C.int(0x1008FF13))
 }
