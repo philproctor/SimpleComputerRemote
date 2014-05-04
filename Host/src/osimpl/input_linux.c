@@ -1,8 +1,6 @@
 #include <X11/extensions/XTest.h>
 #include <X11/extensions/dpms.h>
 
-#include <stdio.h>
-
 static void WakeUp(Display *display) {
 	CARD16 power_level = 0;
 	BOOL state = 0;
