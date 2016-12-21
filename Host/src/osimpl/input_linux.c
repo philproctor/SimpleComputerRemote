@@ -37,12 +37,17 @@ static inline void SendKeycode(int keyCode) {
 
 static inline void SendKeysym(int keySym) {
 	Display *display = XOpenDisplay(NULL);
+	KeyCode kc;
 	if (display != NULL) {
-                WakeUp(display);
-
-		XTestFakeKeyEvent(display, XKeysymToKeycode(display, keySym), True, CurrentTime );
-		XTestFakeKeyEvent(display, XKeysymToKeycode(display, keySym), False, CurrentTime );
-		XFlush(display);
+		// set keycode
+		kc = XKeysymToKeycode(display, keySym);
+		// if the specified KeySym is defined
+		if (kc != 0) {
+                	WakeUp(display);
+			XTestFakeKeyEvent(display, kc, True, CurrentTime );
+			XTestFakeKeyEvent(display, kc, False, CurrentTime );
+			XFlush(display);
+		}
 		XCloseDisplay(display);
 	}
 }
